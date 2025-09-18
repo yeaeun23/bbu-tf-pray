@@ -1,13 +1,48 @@
+@font-face {
+  font-family: "HannaPro";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dohyun";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GangwonEducationModuche";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFLightA.woff")
+    format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cafe24SurroundAir";
+  src: url("https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Binggre";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 300mm;
 }
 
 .card {
@@ -16,18 +51,41 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 400px;
-  padding: 0 100px;
+  width: 95mm;
+  height: 131mm;
+  padding: 14mm;
   border: 1px dashed #eee;
 }
 
+.card:nth-child(6n + 1) {
+  font-family: "HannaPro", sans-serif;
+}
+.card:nth-child(6n + 2) {
+  font-family: "Dohyun", sans-serif;
+}
+.card:nth-child(6n + 3) {
+  font-family: "GangwonEducationModuche", sans-serif;
+}
+.card:nth-child(6n + 4) {
+  font-family: "Cafe24SurroundAir", sans-serif;
+}
+.card:nth-child(6n + 5) {
+  font-family: "Binggre", sans-serif;
+}
+.card:nth-child(6n) {
+  font-family: "Nanum Pen Script", sans-serif;
+}
+
 .contents {
-  font-size: 22px;
-  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16pt;
+  /* font-weight: 500; */
   text-align: center;
   line-height: 1.5;
-   white-space: pre-line;
+  white-space: pre-line;
+  /* background-color: beige; */
 }
 
 .no {
@@ -37,6 +95,7 @@ body {
   text-align: center;
   font-size: 14px;
   color: #ccc;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .group {
@@ -46,4 +105,5 @@ body {
   text-align: center;
   font-size: 14px;
   color: #ccc;
+  font-family: "Noto Sans KR", sans-serif;
 }
