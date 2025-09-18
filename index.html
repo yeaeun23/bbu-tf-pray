@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쀼 수련회 기도제목</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container" id="cardContainer"></div>
+
+<script src="data.js"></script>
+<script>
+    const container = document.getElementById('cardContainer');
+    
+    cardsData.forEach((card, index) => {
+        const cardDiv = document.createElement('div');
+        cardDiv.classList.add('card');
+        
+        const contentSpan = document.createElement('span');
+        contentSpan.classList.add('contents');
+        contentSpan.textContent = card.contents;
+        
+         const noSpan = document.createElement('span');
+        noSpan.classList.add('no');
+        noSpan.textContent = index+1;
+
+        const groupSpan = document.createElement('span');
+        groupSpan.classList.add('group');
+        groupSpan.textContent = card.group;
+        
+        cardDiv.appendChild(contentSpan);
+        cardDiv.appendChild(noSpan);
+         cardDiv.appendChild(groupSpan);
+        container.appendChild(cardDiv);
+    });
+</script>
+</body>
+</html>
