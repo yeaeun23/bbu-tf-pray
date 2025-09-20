@@ -11,7 +11,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 95mm);
+  grid-template-columns: repeat(2, 92mm);
 }
 
 .card {
@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 130mm;
+  height: 128mm;
   padding: 14mm;
   border: 1px dashed #ccc;
 }
@@ -39,7 +39,7 @@ body {
   text-align: center;
   vertical-align: middle;
   font-size: 16pt;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.5;
   white-space: pre-line;
   font-family: "GangwonEducationModuche", sans-serif;
