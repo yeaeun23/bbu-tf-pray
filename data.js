@@ -18,7 +18,7 @@ const cardsData = [
   },
   {
     group: "레드1",
-    contents: "수련회 TF로서\n잘 섬길 수 있도록",
+    contents: "1. 수련회 잘 섬길 수 있기를\n\n2. 사랑을 흘려보내는\n믿음의 가정되기를",
   },
   {
     group: "그린1",
