@@ -22,9 +22,13 @@
         const cardDiv = document.createElement("div");
         cardDiv.classList.add("card");
 
-        const contentSpan = document.createElement("span");
-        contentSpan.classList.add("contents");
-        contentSpan.textContent = card.contents;
+        const contentsSpan = document.createElement("span");
+        contentsSpan.classList.add("contents");
+        contentsSpan.textContent = card.contents;
+
+        if (card.font) {
+          contentsSpan.classList.add(card.font);
+        }
 
         const noSpan = document.createElement("span");
         noSpan.classList.add("no");
@@ -34,7 +38,7 @@
         groupSpan.classList.add("group");
         groupSpan.textContent = card.group;
 
-        cardDiv.appendChild(contentSpan);
+        cardDiv.appendChild(contentsSpan);
         cardDiv.appendChild(noSpan);
         cardDiv.appendChild(groupSpan);
         container.appendChild(cardDiv);
