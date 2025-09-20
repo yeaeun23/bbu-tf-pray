@@ -43,7 +43,7 @@ body {
   line-height: 1.5;
   white-space: pre-line;
   font-family: "GangwonEducationModuche", sans-serif;
-  border: 1px dashed #eee;
+  /* border: 1px dashed #eee; */
 }
 
 .contents.xsmall {
