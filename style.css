@@ -38,7 +38,7 @@ body {
   height: 100%;
   text-align: center;
   vertical-align: middle;
-  font-size: 16pt;
+  font-size: 17pt;
   font-weight: 600;
   line-height: 1.5;
   white-space: pre-line;
@@ -56,6 +56,10 @@ body {
 
 .contents.medium {
   font-size: 14pt;
+}
+
+.contents.large {
+  font-size: 16pt;
 }
 
 .no,
